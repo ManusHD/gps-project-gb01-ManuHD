@@ -50,7 +50,7 @@ class BuscarFragment : Fragment() {
     override fun onAttach(context: android.content.Context) {
         super.onAttach(context)
 
-        db = WeathEventDataBase.getInstance(context)!!
+        db = WeathEventDataBase.getInstance(context)
 
         if (context is OnCiudadClickListener) {
             listener = context
