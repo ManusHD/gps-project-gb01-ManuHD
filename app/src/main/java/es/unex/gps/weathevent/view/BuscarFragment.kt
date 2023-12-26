@@ -111,9 +111,17 @@ class BuscarFragment : Fragment() {
 
                     // Configurar el EditText para filtrar la RecyclerView
                     binding.editText.editText?.addTextChangedListener(object : TextWatcher {
-                        override fun beforeTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                        override fun beforeTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                            // No se realiza ninguna acción específica antes de que el texto cambie.
+                            // Este método está presente para cumplir con la interfaz TextWatcher.
+                            // Si no es necesario realizar ninguna tarea previa al cambio de texto, el cuerpo se mantiene vacío.
+                        }
 
-                        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                            // No se realiza ninguna acción específica cuando el texto cambia.
+                            // Este método está presente para cumplir con la interfaz TextWatcher.
+                            // Si no es necesario realizar ninguna tarea mientras escribe el usuario en el EditText, el cuerpo se mantiene vacío.
+                        }
 
                         override fun afterTextChanged(s: Editable?) {
                             // Llamada al método para filtrar la RecyclerView

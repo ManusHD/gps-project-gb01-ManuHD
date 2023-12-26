@@ -16,7 +16,6 @@ import es.unex.gps.weathevent.databinding.FragmentListEventBinding
 import es.unex.gps.weathevent.interfaces.OnClickEventListener
 import es.unex.gps.weathevent.interfaces.UserParam
 import es.unex.gps.weathevent.model.Event
-import es.unex.gps.weathevent.model.User
 import kotlinx.coroutines.launch
 
 private const val ARG_PARAM1 = "param1"

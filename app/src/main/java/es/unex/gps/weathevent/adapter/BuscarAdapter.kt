@@ -9,8 +9,6 @@ import es.unex.gps.weathevent.R
 import es.unex.gps.weathevent.database.WeathEventDataBase
 import es.unex.gps.weathevent.databinding.SearchItemListBinding
 import es.unex.gps.weathevent.model.Ciudad
-import es.unex.gps.weathevent.model.User
-import kotlinx.coroutines.launch
 
 class BuscarAdapter (
     private var ciudades: List<Ciudad>,
